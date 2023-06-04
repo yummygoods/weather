@@ -68,8 +68,8 @@ header {
 #bottomColorblock{
 	background-color:  rgb(34, 207, 146);
 }
-#greeting{
-	font-size: 1.5rem;
+.greeting{
+	font-size: 2rem;
 	/* margin: .25rem; */
 }
 .emoji {
@@ -83,11 +83,17 @@ header {
 	align-items: center;
 }
 	#unicorn{
+	
 		background-color: #ffffff;
 		border-radius: 50%;
 		font-size:4rem;
-
+		animation: bobble 2s infinite;
+		margin-bottom: 1rem;
+		/* animation: float 2s ease-in-out infinite;  */
 	}
+/* #unicorn:hover {
+	animation: bobble 2s infinite;
+} */
 /*+++++++++++++ FORM +++++++++++++++++*/
 form{
 	display: flex;
@@ -189,6 +195,116 @@ a:hover{
 	transform: rotate(10);
 }
 
-#bottomColorBlock.emoji{
 
+
+
+#nerd {
+	font-size: 5rem;
+	animation: bobble 2s infinite;
+
+} 
+
+@keyframes bobble {
+	0% {
+			transform: translateY(4px);
+			animation-timing-function: ease-in;
+	}
+	50% {
+			transform: translateY(8px);
+			animation-timing-function: ease-out;
+	}
+	100% {
+			transform: translateY(4px);
+	}
+}
+
+@keyframes twist {
+	0% {
+			transform: translateY(8px);
+			animation-timing-function: ease-in;
+	}
+	50% {
+			transform: translateY(16px);
+			animation-timing-function: ease-out;
+	}
+	100% {
+			transform: translateY(8px);
+	}
+}
+
+
+/* box shadow floating animation
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+} */
+
+/* @keyframes newBobble {
+	0% {
+		transform: translate3d(50px, 40px, 0px);
+		animation-timing-function: ease-in;
+	}
+
+	50% {
+		transform: translate3d(50px, 50px, 0px);
+		animation-timing-function: ease-out;
+	}
+
+	100% {
+		transform: translate3d(50px, 40px, 0px);
+	}
+} */
+
+
+
+.animationContainer{
+	display: flex;
+	justify-content: center;
+	margin: 1rem;
+	/* align-items: center; */
+
+}
+
+.aboutMain{
+	min-height: 20rem;
+}
+
+
+.flowerContainer{
+  /* width: 128px;
+  height: 128px; */
+  animation: in 2s linear 0s infinite reverse;
+	animation-play-state: paused;
+}
+
+#twistFlower {
+  animation: in 2s linear 0s infinite normal;
+
+}
+.flowerContainer:hover {
+  animation-play-state: running;
+} 
+
+@keyframes in {
+  0% {
+    transform: rotate(0deg);
+		animation-timing-function: ease-in;
+  }
+  50% {
+    transform: rotate(10deg);
+		animation-timing-function: ease-out;
+  }
+	100% {
+    transform: rotate(-10deg);
+  }
 }

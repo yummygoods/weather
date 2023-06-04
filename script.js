@@ -90,3 +90,5 @@ forecast.forecastday.day.mintemp_f
 
 
 // https://fonts.google.com/icons?preview.text=what%27s%20the%20weather%20gonna%20be%20like%3F&preview.size=37&preview.layout=row&preview.text_type=custom&category=Sans+Serif,Display&sort=popularity&subset=latin&noto.script=Latn&icon.style=Sharp&icon.query=weather
+
+
