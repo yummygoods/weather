@@ -105,7 +105,7 @@ form{
 	font-weight: bold;
 	justify-items: center;
 }
-label p {
+label {
 	max-width: 195px;
 font-size: 18px;
 margin:.5rem;
@@ -246,6 +246,7 @@ a:hover{
 
 .aboutMain{
 	min-height: 20rem;
+
 }
 
 
@@ -276,4 +277,16 @@ a:hover{
 	100% {
     transform: rotate(-10deg);
   }
+}
+
+p {
+	font-size: 18px;
+}
+
+.test{
+margin: 1rem;
+}
+
+.test p {
+font-weight: bold;
 }
